@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
-
+<span id="store_counter">
+  <%= "You visited this store #{pluralize(session[:counter], 'time')}." unless session[:counter] < 5 %>
+  </span>
 <h1>Your Catalogue</h1>
 <% cache @products do %>
   <% @products.each do |product| %>
@@ -10,6 +12,7 @@
         <%= sanitize(product.description) %>
         <div class="price_line">
           <span class="price"><%= number_to_currency(product.price) %></span>
+          <%= button_to 'Add to cart', line_items_path(product_id: product) %>
         </div>
       </div>
     <% end %>
