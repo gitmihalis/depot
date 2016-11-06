@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ProductsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @product = products(:one)
+    @product = products(:ruby)
     @update = {
       title: 'Lorem Ipsum',
       description: 'Wibbles are fun!',
@@ -14,6 +14,10 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
     get products_url
     assert_response :success
+    assert_select '.list_actions a', minimum: 3
+    assert_select 'h1', 'Products'
+    assert_select 'img.list_image'
+    assert_select 'td.list_description'
   end
 
   test "should get new" do
@@ -51,4 +55,5 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to products_url
   end
+
 end
