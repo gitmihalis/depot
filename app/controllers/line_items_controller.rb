@@ -28,8 +28,8 @@ class LineItemsController < ApplicationController
   # POST /line_items.json
   def create
     product = Product.find(params[:product_id])
-    @line_item = @cart.line_items.build(product: product)
-    # =>  @cart was set before the action with set_cart()
+    @line_item = @cart.add_product(product)
+    # =>  @cart was set before the create() with set_cart()
     respond_to do |format|
       if @line_item.save
         session[:counter] = 0
