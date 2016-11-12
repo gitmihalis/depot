@@ -61,6 +61,26 @@ body, body > p, body > ol, body > ul, body > td {margin: 8px !important}
     background: #141;
     position: relative;
 
+//    form, div {
+//      display: inline;
+//    }
+
+    input {
+      font-size: small;
+    }
+
+    #cart {
+      font-size: smaller;
+      color: white;
+
+      table {
+        border-top: 1px dotted #595;
+        border-bottom: 1px dotted #595;
+        margin-bottom: 10px;
+      }
+    }
+
+
     #timestamp {
       color: #BBFFBB;
       word-break: break-all;
