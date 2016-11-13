@@ -1,9 +1,10 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  product: two
+  product: php
   cart: one
 
 two:
-  product: two
+  product: php
   cart: two
+

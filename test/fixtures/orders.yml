@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Tim Allen
+  address: 33 Maple Drive
+  email: tim@homeimprovement.com
+  pay_type: Check
+
+two:
+  name: MyString
+  address: MyText
+  email: MyString
+  pay_type: 1
