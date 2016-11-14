@@ -1,0 +1,9 @@
+<h3>Depot Order shipped</h3>
+<p>
+  Just letting you know, we just shipped an order you place at Depot.
+</p>
+<table>
+  <tr><th colspan="2">Qty</th><th>Description</th></tr>
+  <%= render @order.line_items %>
+</table>
+

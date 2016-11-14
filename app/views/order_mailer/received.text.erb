@@ -1,0 +1,9 @@
+Hi <%= @order.name %>
+
+Thank you for ordering from the Depot!
+
+You bought the following items:
+
+<%= render @order.line_items -%>
+
+We'll let you know as soon as your order ships.
