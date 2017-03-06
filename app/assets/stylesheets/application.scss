@@ -28,8 +28,9 @@ body, body > p, body > ol, body > ul, body > td {margin: 8px !important}
   img {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 192px;
+    left: 1em;
+    height: 55px;
+    padding: 5px 0 0 0;
   }
 }
 

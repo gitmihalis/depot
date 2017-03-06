@@ -32,7 +32,7 @@ en:
 
   layouts:
     application:
-      title:     "The Pragmatic Bookshelf"
+      title:     "The Depot Bookshelf"
       home:      "Home"
       questions: "Questions"
       news:      "News"
@@ -40,7 +40,7 @@ en:
 
   store:
     index:
-      title_html: "Your Pragmatic Catalogue"
+      title_html: "Your Depot Catalogue"
       add_html:   "Add to Cart"
 
   carts:
